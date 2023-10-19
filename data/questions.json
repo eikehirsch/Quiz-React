@@ -1,0 +1,141 @@
+{
+  "questions": [
+    {
+      "question": "Qual é o framework de JavaScript mais famoso?",
+      "options": ["Angular", "React", "Svelte", "Vue"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Qual compania inventou o React?",
+      "options": ["Google", "Apple", "Netflix", "Facebook"],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "Qual é a unidade conceitual mais fundamental dos aplicativos React?",
+      "options": ["Components", "Blocks", "Elements", "Effects"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Qual é o nome da sintaxe que usamos para descrever o UI em componentes React?",
+      "options": ["FBJ", "Babel", "JSX", "ES2015"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "Como os dados fluem de maneira geral em aplicativos React?",
+      "options": [
+        "De componentes pais para filhos",
+        "De componentes filhos para pais",
+        "As duas vias",
+        "O desenvolvedor decide"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Como passamos dados para um componente filhos?",
+      "options": ["State", "Props", "PropTypes", "Parâmetros"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Quando usamos derived state?",
+      "options": [
+        "Sempre que um state não deve causar uma re-renderização",
+        "Sempre que um state puder ser sincronizado com um effect",
+        "Sempre que o state não deve ter acesso a todos os componentes",
+        "Sempre que um state puder ser computado de outra variável state"
+      ],
+      "correctOption": 3,
+      "points": 30
+    },
+    {
+      "question": "O que causa uma re-renderização do UI em React?",
+      "options": [
+        "Executar um effect",
+        "Passar uma props",
+        "Atualizar um state",
+        "Adicionar event listeners em elementos do DOM"
+      ],
+      "correctOption": 2,
+      "points": 20
+    },
+    {
+      "question": "Quando nós 'tocamos' diretamente o DOM em React?",
+      "options": [
+        "Quando precisamos ouvir um event",
+        "Quando precisamos mudar o UI",
+        "Quando precisamos adicionar estilização",
+        "Praticamente nunca"
+      ],
+      "correctOption": 3,
+      "points": 20
+    },
+    {
+      "question": "Em que situação usamos uma função callback para atualizar um state?",
+      "options": [
+        "Quando a atualização do state será lenta",
+        "Quando o state atualizado tiver muitos dados",
+        "Quando a atualização do state precisa acontecer rapidamente",
+        "Quando o novo state depender do valor anterior do state"
+      ],
+      "correctOption": 3,
+      "points": 30
+    },
+    {
+      "question": "Se passarmos uma função ao useState, quando essa função será chamada?",
+      "options": [
+        "Em cada re-renderização",
+        "Cada vez que atualizarmos o state",
+        "Apenas durante a renderização inicial",
+        "Na primeira vez que atualizamos o state"
+      ],
+      "correctOption": 2,
+      "points": 30
+    },
+    {
+      
+      "question": "Qual hook usamos para fazer uma request de API na renderização inicial do componente?",
+      "options": ["useState", "useEffect", "useRef", "useReducer"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      
+      "question": "Quais variáveis deveriam pertencer ao array de dependência do useEffect?",
+      "options": [
+        "Geralmente nenhum",
+        "Todos as variáveis state",
+        "Todos os states e props usados no effect",
+        "Todas as variáveis necessárias para limpar o effect"
+      ],
+      "correctOption": 2,
+      "points": 30
+    },
+    {
+      "question": "Um effect sempre será executado na renderização inicial.",
+      "options": [
+        "Verdadeiro",
+        "Vai depender do array de dependências",
+        "Falso",
+        "Vai depender da lógica dentro do effect"
+      ],
+      "correctOption": 0,
+      "points": 30
+    },
+    {
+      "question": "Quando um effect será executado se ele não possuir um array de dependências?",
+      "options": [
+        "Apenas quando o componente for montado",
+        "Apenas quando o componente for desmontado",
+        "Na primeira vez que o componente re-renderizar",
+        "Cada vez que o componente for re-renderizado"
+      ],
+      "correctOption": 3,
+      "points": 20
+    }
+  ]
+}
