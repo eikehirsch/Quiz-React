@@ -1,11 +1,14 @@
 import React from "react";
+import { useQuiz } from "./contexts/QuizContext";
 
-function Options({ question, dispatch, answer }) {
+function Options({question}) {
+  const {dispatch, answer} = useQuiz();
+
   const hasAnswered = answer !== null;
 
   return (
     <div className="options">
-      {question.options.map((option, index) => (
+       {question.options.map((option, index) => (
         <button
           disabled={hasAnswered}
           onClick={() => dispatch({ type: "newAnswer", payload: index })}
